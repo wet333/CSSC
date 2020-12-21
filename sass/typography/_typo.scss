@@ -1,0 +1,49 @@
+pre{
+    margin: 2rem 0;
+    background-color: adjust-color($main-color, $lightness: +5%, $alpha: 1.0);
+    box-shadow: adjust-color($main-color, $lightness: -5%, $alpha: -0.8) 0 0 0.4rem 0.2rem;
+    overflow-x: auto;
+    width: 100%;
+}
+acronym{
+    text-decoration: underline;
+    color: $accent-color;
+}
+abbr{
+    text-decoration: underline;
+    color: $accent-color;
+}
+blockquote{
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: adjust-color($main-color, $lightness: +5%, $alpha: 1.0);
+    border-left: 0.5rem solid $accent-color;
+    box-shadow: adjust-color($main-color, $lightness: -5%, $alpha: -0.8) 0 0 0.4rem 0.2rem;
+}
+kbd{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    background-color: rgb(224, 223, 208);
+    color: rgb(20, 20, 20);
+    font-weight: 800;
+    border-radius: 1rem;
+    box-shadow: adjust-color($main-color, $lightness: -5%, $alpha: -0.8) 0 0 0.4rem 0.2rem;
+}
+details{
+    margin: 2rem 0;
+    background-color: adjust-color($main-color, $lightness: +5%, $alpha: 1.0);
+    box-shadow: adjust-color($main-color, $lightness: -5%, $alpha: -0.8) 0 0 0.4rem 0.2rem;
+    cursor: pointer;
+
+    & :focus{
+        outline: 2px solid $accent-color;
+    }
+
+    & :not(summary){
+        background-color: adjust-color($main-color, $lightness: -5%, $alpha: 1.0);
+    }
+}
+summary{
+    padding: 1rem;
+}

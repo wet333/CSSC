@@ -1,0 +1,28 @@
+table{
+    background-color: adjust-color($main-color, $lightness: +5%, $alpha: 1.0);
+    margin: {
+        top: 2rem;
+        bottom: 2rem;
+    };
+    box-shadow: adjust-color($main-color, $lightness: -5%, $alpha: -0.8) 0 0 0.4rem 0.2rem;
+}
+
+tr:nth-child(2n+1){
+    background-color: adjust-color($main-color, $lightness: +8%, $alpha: 1.0);
+}
+tr:first-child{
+    background-color: adjust-color($accent-color, $lightness: -10%, $alpha: 1.0);
+}
+td,th{
+    padding: 0.5rem;
+    border: 0.1rem solid adjust-color($accent-color, $lightness: -10%, $alpha: 1.0);
+    text-align: left;
+
+    &:hover{
+        background-color: adjust-color($accent-color, $lightness: -10%, $alpha: -0.8);
+    }
+}
+th{
+    color: $main-color;
+    font-weight: 700;
+}

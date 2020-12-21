@@ -1,0 +1,123 @@
+@mixin input-colors {
+    color: $font-color;
+    background-color: $main-color;
+    box-shadow: $shadow-main-color 0px 0px 1rem -0.8rem inset;
+    border: none;
+}
+
+@mixin input-space {
+    margin: {
+        top: 0.25rem;
+        bottom: 1rem;
+    };
+}
+@mixin unlabeled-input-space {
+    margin: {
+        top: 1rem;
+        bottom: 1rem;
+    };
+}
+
+textarea:focus,
+select:focus,
+button:focus,
+input:focus{
+    outline: 2px solid $accent-color;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="datetime-local"],
+textarea{
+    padding: 0.5rem;
+    @include input-colors();
+    @include input-space();
+
+    &[placeholder]{
+        @include unlabeled-input-space();
+        &::placeholder{
+            color: adjust-color($font-color, $lightness: -15%, $alpha: 1.0);
+        }
+    }
+}
+
+textarea{
+    resize: none;
+}
+
+select{
+    @include input-colors();
+    @include input-space();
+    padding: 0.3rem;
+    cursor: pointer;
+}
+optgroup{
+    padding: 0.5rem;
+}
+option{
+    cursor: pointer;
+}
+
+input[type="radio"]{
+    cursor: pointer;
+}
+
+input[type="file"]{
+    padding: 1rem;
+    margin: {
+        bottom: 1rem;
+    };
+    cursor: pointer;
+    text-indent: 1rem;
+    @include input-colors();
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button{
+    display: inline-flex;
+    min-width: fit-content;
+    width: auto;
+    height: fit-content;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    box-shadow: adjust-color($shadow-main-color, $lightness: 0%, $alpha: -0.9) 0px 0px 1rem;
+    background-color: adjust-color($accent-color, $lightness: +10%, $alpha: 1.0);
+    color: $main-color;
+    font-weight: 700;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    appearance: none;
+
+    &:hover{
+        background-color: adjust-color($accent-color, $lightness: -20%, $alpha: 1.0);
+        color: $font-color;
+        box-shadow: adjust-color($shadow-main-color, $lightness: 0%, $alpha: -0.5) 0px 0px 1rem;
+    }
+}
+
+input[type="range"]{
+    @include unlabeled-input-space();
+    background-color: aqua;
+}
+
+input[type="color"]{
+    height: 2rem;
+    width: 4rem;
+    padding: 0.2rem;
+    background-color: $main-color;
+    @include unlabeled-input-space();
+}
+
+::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+}

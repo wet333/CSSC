@@ -1,0 +1,17 @@
+@import "./reset.scss";
+@import "./variables.scss";
+@import "./typography/font";
+@import "./blocks/blocks";
+@import "./lists/lists";
+@import "./form/forms";
+@import "./tables/tables";
+@import "./media/img";
+
+body{
+    background-color: $main-color;
+    color: $font-color;
+    padding: {
+        left: 4rem;
+        right: 4rem;
+    };
+}

@@ -1,0 +1,31 @@
+fieldset{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: {
+        left: 2rem;
+        right: 2rem;
+        top: 1rem;
+        bottom: 1.5rem;
+    };
+    background-color: adjust-color($accent-color, $alpha: -0.9);
+    border: {
+        style: solid;
+        width: 0.2rem;
+        color: adjust-color($accent-color, $lightness: -20%);
+    };
+    box-shadow: adjust-color($main-color, $lightness: -5%, $alpha: -0.8) 0 0 0.4rem 0.2rem;
+}
+
+legend{
+    font-size: 2rem;
+    font-weight: 700;
+
+    padding: {
+        left: 1rem;
+        right: 1rem;
+        top: 0.1rem;
+        bottom: 0.4rem;
+    };
+    background-color: adjust-color($accent-color, $lightness: -20%);
+}

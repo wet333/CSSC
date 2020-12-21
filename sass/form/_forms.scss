@@ -1,0 +1,12 @@
+@import "./fieldset";
+@import "./input";
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    padding: 0.25rem 0rem;
+    width: fit-content;
+}

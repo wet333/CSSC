@@ -1,0 +1,41 @@
+@import "./desclist";
+
+
+ul,ol{
+    display: flex;
+    flex-direction: column;
+    list-style-position: inside;
+    margin: {
+        left: 1rem;
+    };
+
+    &:first-child{
+        margin-top: 0;
+    }
+}
+
+/*Nesting levels*/
+ul {
+   list-style: square;
+
+   & ul{
+       list-style: disc;
+
+       & ul{
+           list-style: circle;
+       }
+   }
+
+   & li::marker{
+       color: adjust-color($accent-color, $lightness: -10%);
+   }
+}
+
+ol{
+    list-style: upper-roman;
+    display: inline-flex;
+}
+
+li{
+    list-style-position:inside;
+}

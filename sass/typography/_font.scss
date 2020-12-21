@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import "./typo";
+@import "./links";
+
+/*FONT VARIABLES*/
+$font_root_size: 16px;
+
+/*SET ROOT FONT*/
+@mixin font_config{
+    font-family: 'Open Sans', sans-serif;
+    font-size: $font_root_size;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    text-rendering: optimizeLegibility;
+}
+
+html{
+    @include font_config();
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 4rem;
+    margin: {
+        bottom: 0.5rem;
+    }
+}
+
+h1{
+    font-size: ($font_root_size * 3.2);
+}
+h2{
+    font-size: ($font_root_size * 2.4);
+}
+h3{
+    font-size: ($font_root_size * 2);
+}
+h4{
+    font-size: ($font_root_size * 1.6);
+}
+h5{
+    font-size: ($font_root_size * 1.4);
+}
+h6{
+    font-size: ($font_root_size * 1.2);
+}
+
+p{
+    padding: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
+}

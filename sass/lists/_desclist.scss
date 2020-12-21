@@ -1,0 +1,26 @@
+dl{
+    display: flex;
+    flex-direction: column;
+
+    &:first-child{
+        margin-top: 0;
+    }
+
+    &:last-child{
+        padding-bottom: 1rem;
+    }
+}
+dt{
+    font-weight: 600;
+    border-bottom: white solid 1px;
+    width: fit-content;
+    margin-top: 0.5rem;
+}
+dd{
+    font-weight: 300;
+    width: fit-content;
+    margin: {
+        top: 0.1rem;
+        left: 0.5rem;
+    }
+}
