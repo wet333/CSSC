@@ -1,6 +1,6 @@
 {
   "name": "wet-cssc",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A CSS classless framework for quick prototyping.",
   "main": "index.html",
   "scripts": {
@@ -19,5 +19,5 @@
   "bugs": {
     "url": "https://github.com/wet333/CSSC/issues"
   },
-  "homepage": "https://github.com/wet333/CSSC#readme"
+  "homepage": "https://keen-morse-9bc5ed.netlify.app/"
 }
