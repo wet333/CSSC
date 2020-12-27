@@ -15,3 +15,20 @@ body{
         right: 4rem;
     };
 }
+@media screen and (max-width: 800px){
+    body{
+        padding: {
+            left: 1rem;
+            right: 1rem;
+        };
+    }
+}
+
+@media screen and (max-width: 500px){
+    body{
+        padding: {
+            left: 0rem;
+            right: 0rem;
+        };
+    }
+}

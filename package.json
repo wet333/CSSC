@@ -1,0 +1,23 @@
+{
+  "name": "wet-cssc",
+  "version": "1.0.0",
+  "description": "A CSS classless framework for quick prototyping.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wet333/CSSC.git"
+  },
+  "keywords": [
+    "css",
+    "classless"
+  ],
+  "author": "Agustin Wet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wet333/CSSC/issues"
+  },
+  "homepage": "https://github.com/wet333/CSSC#readme"
+}

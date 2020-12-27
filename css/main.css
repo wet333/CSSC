@@ -8,28 +8,28 @@
 /*VARIABLES*/
 pre {
   margin: 2rem 0;
-  background-color: #2f2f2f;
-  box-shadow: rgba(21, 21, 21, 0.2) 0 0 0.4rem 0.2rem;
+  background-color: #2a2a2a;
+  box-shadow: rgba(16, 16, 16, 0.2) 0 0 0.4rem 0.2rem;
   overflow-x: auto;
   width: 100%;
 }
 
 acronym {
   text-decoration: underline;
-  color: #19dc7d;
+  color: #46e018;
 }
 
 abbr {
   text-decoration: underline;
-  color: #19dc7d;
+  color: #46e018;
 }
 
 blockquote {
   margin: 2rem 0;
   padding: 1rem;
-  background-color: #2f2f2f;
-  border-left: 0.5rem solid #19dc7d;
-  box-shadow: rgba(21, 21, 21, 0.2) 0 0 0.4rem 0.2rem;
+  background-color: #2a2a2a;
+  border-left: 0.5rem solid #46e018;
+  box-shadow: rgba(16, 16, 16, 0.2) 0 0 0.4rem 0.2rem;
 }
 
 kbd {
@@ -40,20 +40,20 @@ kbd {
   color: #141414;
   font-weight: 800;
   border-radius: 1rem;
-  box-shadow: rgba(21, 21, 21, 0.2) 0 0 0.4rem 0.2rem;
+  box-shadow: rgba(16, 16, 16, 0.2) 0 0 0.4rem 0.2rem;
 }
 
 details {
   margin: 2rem 0;
-  background-color: #2f2f2f;
-  box-shadow: rgba(21, 21, 21, 0.2) 0 0 0.4rem 0.2rem;
+  background-color: #2a2a2a;
+  box-shadow: rgba(16, 16, 16, 0.2) 0 0 0.4rem 0.2rem;
   cursor: pointer;
 }
 details :focus {
-  outline: 2px solid #19dc7d;
+  outline: 2px solid #46e018;
 }
 details :not(summary) {
-  background-color: #151515;
+  background-color: #101010;
 }
 
 summary {
@@ -61,25 +61,29 @@ summary {
 }
 
 a {
-  color: #19dc7d;
+  color: #46e018;
   text-decoration: underline;
 }
 a:hover {
-  color: #56eca3;
+  color: #7aed57;
 }
 a:visited {
-  color: #e62382;
+  color: #b91fe7;
 }
 a:visited:hover {
-  color: #ee68a9;
-  border-bottom: 1px solid #ee68a9;
+  color: #cf64ee;
+  border-bottom: 1px solid #cf64ee;
 }
 
 /*FONT VARIABLES*/
+:root {
+  --font-size: calc(16px + 0.1vw);
+}
+
 /*SET ROOT FONT*/
 html {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: var(--font-size);
   font-weight: 400;
   letter-spacing: 0.2px;
   text-rendering: optimizeLegibility;
@@ -93,30 +97,31 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 4rem;
   margin-bottom: 0.5rem;
+  overflow-wrap: break-word;
 }
 
 h1 {
-  font-size: 51.2px;
+  font-size: calc(var(--font-size) * 3.2);
 }
 
 h2 {
-  font-size: 38.4px;
+  font-size: calc(var(--font-size) * 2.4);
 }
 
 h3 {
-  font-size: 32px;
+  font-size: calc(var(--font-size) * 2);
 }
 
 h4 {
-  font-size: 25.6px;
+  font-size: calc(var(--font-size) * 1.6);
 }
 
 h5 {
-  font-size: 22.4px;
+  font-size: calc(var(--font-size) * 1.4);
 }
 
 h6 {
-  font-size: 19.2px;
+  font-size: calc(var(--font-size) * 1.2);
 }
 
 p {
@@ -188,7 +193,7 @@ ul ul ul {
   list-style: circle;
 }
 ul li::marker {
-  color: #14ae63;
+  color: #38b213;
 }
 
 ol {
@@ -208,11 +213,23 @@ fieldset {
   padding-right: 2rem;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
-  background-color: rgba(25, 220, 125, 0.1);
+  background-color: rgba(70, 224, 24, 0.1);
   border-style: solid;
   border-width: 0.2rem;
-  border-color: #0f8049;
-  box-shadow: rgba(21, 21, 21, 0.2) 0 0 0.4rem 0.2rem;
+  border-color: #29840e;
+  box-shadow: rgba(16, 16, 16, 0.2) 0 0 0.4rem 0.2rem;
+}
+@media screen and (max-width: 500px) {
+  fieldset {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    border-style: none;
+    border-width: 0.2rem;
+    border-color: #29840e;
+  }
 }
 
 legend {
@@ -222,14 +239,14 @@ legend {
   padding-right: 1rem;
   padding-top: 0.1rem;
   padding-bottom: 0.4rem;
-  background-color: #0f8049;
+  background-color: #29840e;
 }
 
 textarea:focus,
 select:focus,
 button:focus,
 input:focus {
-  outline: 2px solid #19dc7d;
+  outline: 2px solid #46e018;
 }
 
 input[type=text],
@@ -243,8 +260,8 @@ input[type=date],
 input[type=datetime-local],
 textarea {
   padding: 0.5rem;
-  color: #e7e7e7;
-  background-color: #222;
+  color: #e6e6e6;
+  background-color: #1d1d1d;
   box-shadow: black 0px 0px 1rem -0.8rem inset;
   border: none;
   margin-top: 0.25rem;
@@ -273,7 +290,7 @@ input[type=email][placeholder]::placeholder,
 input[type=date][placeholder]::placeholder,
 input[type=datetime-local][placeholder]::placeholder,
 textarea[placeholder]::placeholder {
-  color: #c1c1c1;
+  color: silver;
 }
 
 textarea {
@@ -281,8 +298,8 @@ textarea {
 }
 
 select {
-  color: #e7e7e7;
-  background-color: #222;
+  color: #e6e6e6;
+  background-color: #1d1d1d;
   box-shadow: black 0px 0px 1rem -0.8rem inset;
   border: none;
   margin-top: 0.25rem;
@@ -306,10 +323,11 @@ input[type=radio] {
 input[type=file] {
   padding: 1rem;
   margin-bottom: 1rem;
+  width: 100%;
   cursor: pointer;
   text-indent: 1rem;
-  color: #e7e7e7;
-  background-color: #222;
+  color: #e6e6e6;
+  background-color: #1d1d1d;
   box-shadow: black 0px 0px 1rem -0.8rem inset;
   border: none;
 }
@@ -326,8 +344,8 @@ button {
   padding: 0.5rem 1rem;
   margin: 1rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1rem;
-  background-color: #3fe996;
-  color: #222;
+  background-color: #68eb40;
+  color: #1d1d1d;
   font-weight: 700;
   border: none;
   text-align: center;
@@ -338,8 +356,8 @@ input[type=button]:hover,
 input[type=submit]:hover,
 input[type=reset]:hover,
 button:hover {
-  background-color: #0f8049;
-  color: #e7e7e7;
+  background-color: #29840e;
+  color: #e6e6e6;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 1rem;
 }
 
@@ -353,7 +371,7 @@ input[type=color] {
   height: 2rem;
   width: 4rem;
   padding: 0.2rem;
-  background-color: #222;
+  background-color: #1d1d1d;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -373,45 +391,59 @@ label {
 }
 
 table {
-  background-color: #2f2f2f;
+  background-color: #2a2a2a;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  box-shadow: rgba(21, 21, 21, 0.2) 0 0 0.4rem 0.2rem;
+  box-shadow: rgba(16, 16, 16, 0.2) 0 0 0.4rem 0.2rem;
 }
 
 tr:nth-child(2n+1) {
-  background-color: #363636;
+  background-color: #313131;
 }
 
 tr:first-child {
-  background-color: #14ae63;
+  background-color: #38b213;
 }
 
 td, th {
   padding: 0.5rem;
-  border: 0.1rem solid #14ae63;
+  border: 0.1rem solid #38b213;
   text-align: left;
 }
 td:hover, th:hover {
-  background-color: rgba(20, 174, 99, 0.2);
+  background-color: rgba(56, 178, 19, 0.2);
 }
 
 th {
-  color: #222;
+  color: #1d1d1d;
   font-weight: 700;
 }
 
 img {
   align-self: center;
-  width: fit-content;
+  width: 100%;
+  max-width: fit-content;
   image-rendering: -webkit-optimize-contrast;
 }
 
 body {
-  background-color: #222;
-  color: #e7e7e7;
+  background-color: #1d1d1d;
+  color: #e6e6e6;
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
