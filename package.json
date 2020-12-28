@@ -1,10 +1,10 @@
 {
   "name": "wet-cssc",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "A CSS classless framework for quick prototyping.",
-  "main": "index.html",
+  "main": "./css/main.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "sass --watch ./sass/:./css/"
   },
   "repository": {
     "type": "git",
@@ -12,7 +12,9 @@
   },
   "keywords": [
     "css",
-    "classless"
+    "classless",
+    "css-framework",
+    "framework"
   ],
   "author": "Agustin Wet",
   "license": "MIT",

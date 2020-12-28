@@ -1,6 +1,20 @@
 /*VARIABLES*/
-$font-color: rgb(230, 230, 230);
-$accent-color: rgb(70, 224, 24);
+$font-color: rgb(236, 236, 236);
 
-$main-color: rgb(29, 29, 29);
-$shadow-main-color: adjust-color($main-color , $lightness: -20%)
+$main-color: rgb(20, 20, 20);
+$main-color-light-5: lighten($main-color, $amount: 5%);
+$main-color-light-10: lighten($main-color, $amount: 10%);
+$main-color-dark-5: darken($main-color, $amount: 5%);
+$main-color-dark-10: darken($main-color, $amount: 10%);
+
+$accent-color: rgb(212, 216, 2);
+$accent-color-light: lighten($accent-color, $amount: 20%);
+$accent-color-dark: darken($accent-color, $amount: 20%);
+
+$inverse-color: rgb(187, 8, 8);
+$inverse-color-light: lighten($inverse-color, $amount: 20%);
+$inverse-color-dark: darken($inverse-color, $amount: 20%);
+
+:root{
+    --font-color: #{$font-color};
+}

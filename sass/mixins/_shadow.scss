@@ -1,0 +1,9 @@
+@mixin apply-box-shadow() {
+    $color : rgba(black, 0.075);
+    box-shadow: $color 0 0 0.4rem 0.2rem;
+}
+
+@mixin apply-inner-shadow() {
+    $color : rgba(black, 0.075);
+    box-shadow: $color 0px 0px 1rem -0.8rem inset;
+}

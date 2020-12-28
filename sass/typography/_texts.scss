@@ -1,0 +1,37 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin: {
+        bottom: 0.5rem;
+    }
+    overflow-wrap: break-word;
+}
+
+h1{
+    font-size: calc(var(--font-size) * 3.2);
+}
+h2{
+    font-size: calc(var(--font-size) * 2.4);
+}
+h3{
+    font-size: calc(var(--font-size) * 2);
+}
+h4{
+    font-size: calc(var(--font-size) * 1.6);
+}
+h5{
+    font-size: calc(var(--font-size) * 1.4);
+}
+h6{
+    font-size: calc(var(--font-size) * 1.2);
+}
+
+p{
+    padding: {
+        top: 0.3rem;
+        left: 0.3rem;
+        right: 0.3rem;
+        bottom: 1rem
+    };
+    line-height: 2rem;
+    font-weight: 400;
+}

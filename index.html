@@ -5,303 +5,59 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
 	<link rel="stylesheet" href="css/main.css">
 	<!-- <link rel="stylesheet" href="https://unpkg.com/wet-cssc/css/main.css"> -->
-    <title>test</title>
+    <title>CSSClassless</title>
 </head>
 <body>
+	<header>
+		<h1>CSSC</h1>
+		<p>A simple CSS classless framework to make responsive prototyping on seconds.</p>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="preview.html">Preview</a>
+		</nav>
+	</header>
+	<main>
+		
+		<section>
+			<h3>Getting Started</h2>
+				<p>
+					To start using CSSC in your proyect only add : 
+					<em>&ltlink rel="stylesheet" href="https://unpkg.com/wet-cssc/css/main.css"&gt</em>
+					 in your &lthead&gt tag , that downloads the lastest version from the CDN.
+				</p>
+				<p>
+					Also you can download the entire project from <a href="https://github.com/wet333/CSSC" target="_blank" rel="noopener noreferrer">Github</a>
+					 or typing <em>git clone https://github.com/wet333/CSSC.git main</em> on your console.
+				</p>
+		</section>
 
-<!-- Sample Content to Plugin to Template -->
-<section>
-	<h1>CSS Classless</h1>
-	<p>
-		The purpose of this HTML is to help determine what default settings are with CSS and to make sure that all possible HTML Elements are included in this HTML so as to not miss any possible Elements when designing a site.
-	</p>
-	<button>Im a normal Button</button>
-</section>
-
-<hr />
-
-<section>
-	<h1 id="headings">Headings</h1>
-
-	<h1>Heading 1</h1>
-	<h2>Heading 2</h2>
-	<h3>Heading 3</h3>
-	<h4>Heading 4</h4>
-	<h5>Heading 5</h5>
-	<h6>Heading 6</h6>
-
-	<small><a href="#top">[top]</a></small>
-</section>
-
-<hr />
-
-<section>
-	<h1 id="paragraph">Paragraph</h1>
-
-	<img src="https://cdn.pixabay.com/photo/2016/11/29/06/15/plans-1867745_960_720.jpg">
-
-	<p>Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
-
-	<img src="https://cdn.pixabay.com/photo/2015/04/20/13/17/work-731198_960_720.jpg" alt="Programming">
-
-	<p>Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
-
-	<small><a href="#top">[top]</a></small>
-</section>
-
-<hr />
-
-<section>
-	<h1 id="list_types">List Types</h1>
-
-	<article>
-		<h3>Definition List</h3>
-		<dl>
-			<dt>HTML</dt>
-			<dd>Hipertext Markup Languaje.</dd>
-			<dt>CSS</dt>
-			<dd>Cascading Style Sheets.</dd>
-			<dt>Javascript</dt>
-			<dd>Nothing related to Java.</dd>
-		</dl>
-	</article>
-
-	<article>
-		<h3>Ordered List</h3>
-		<ol>
-			<li>List Item 1</li>
-			<li>List Item 2</li>
-			<li>
-				<ol>
-					<li>List Item</li>
-					<li>List Item</li>
-					<li>
-						<ol>
-							<li>List Item</li>
-							<li>List Item</li>
-							<li>List Item</li>
-						</ol>
-					</li>
-					<li>List Item</li>
-				</ol>
-			</li>
-			<li>List Item 3</li>
-		</ol>
-	</article>
-
-	<article>
-		<h3>Unordered List</h3>
-		<ul>
-			<li>Coffee</li>
-			<li>Tea
+		<section>
+			<h3>Modifing the Project</h3>
+			<p>
+				After download the project type <em>npm start</em> on your console, and the changes on sass/scss files will update the main.css file
+			</p>
+			<h6>Project Structure</h6>
+			<p>Sass Files :</p>
 			<ul>
-				<li>Black tea</li>
-				<ul>
-					<li>Piss</li>
-					<li>Cocoa</li>
-				</ul>
-				<li>Green tea</li>
+				<li><em>main.scss</em> : here are imported all the files.</li>
+				<li><em>_variables.scss</em> : here you can change the theme colors.</li>
+				<li><em>_reset.scss</em> : a reset of default HTML styling.</li>
+				<li>The rest of the folders have the styles of the elements corresponding to the folder's name.</li>
 			</ul>
-			</li>
-			<li>Milk</li>
-		</ul>
-	</article>
+			<p>CSS files :</p>
+			<ul>
+				<li><em>main.css</em> : this is the sass compiled into css that you can use on your project.</li>
+			</ul>
+		</section>
 
-	<article>
-		<h3>Mixed List</h3>
-		<ol>
-			<li>Remove the skin from the garlic, and chop coarsely.</li>
-			<li>Remove all the seeds and stalk from the pepper, and chop coarsely.</li>
-			<li>Add all the ingredients into a food processor.</li>
-			<li>Process all the ingredients into a paste.
-				<ul>
-					<li>If you want a coarse "chunky" hummus, process it for a short time.</li>
-					<li>If you want a smooth hummus, process it for a longer time.</li>
-				</ul>
-			</li>
-			<li>Dont you cry.</li>
-		</ol>
-	</article>
-
-	<small><a href="#top">[top]</a></small>
-</section>
-
-<hr />
-
-<section>
-	<h1 id="form_elements">Fieldsets, Legends, and Form Elements</h1>
-
-	<fieldset>
-		<legend>Legend</legend>
-
-		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</p>
-
-		<form>
-			<h2>Form Element</h2>
-
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
-
-			<br>
-
-			<label for="text_field">Text Field:</label>
-			<input type="text" id="text_field" />
-
-			<label for="text_area">Text Area:</label>
-			<textarea id="text_area"></textarea>
-
-			<label for="password">Password:</label>
-			<input type="password" class="password" name="password" />
-
-			<div>
-				<label for="select_element">Select Element:</label><br />
-				<select name="select_element">
-					<optgroup label="Cold Drinks">
-						<option value="1">Coke</option>
-						<option value="2">Lemonade</option>
-						<option value="3">Water</option>
-					</optgroup>
-					<optgroup label="Hot Driks">
-						<option value="1">Coffe</option>
-						<option value="2">Tea</option>
-						<option value="3">Cocoa</option>
-					</optgroup>
-				</select>
-			</div>
-
-			<div>
-				<label for="radio_buttons">Radio Buttons:</label><br />
-				<div>
-					<input type="radio" name="radio_button" value="radio_1" id="r1"/>
-					<label for="r1">Left</label>
-				</div>
-				<div>
-					<input type="radio" name="radio_button" value="radio_2" id="r2"/>
-					<label for="r2">Center</label>
-				</div>
-				<div>
-					<input type="radio" name="radio_button" value="radio_3" id="r3"/>
-					<label for="r3">Rigth</label>
-				</div>
-			</div>
-
-			<div>
-				<label for="checkboxes">Checkboxes:</label><br />
-				<div>
-					<input type="checkbox" name="checkboxes" value="check_1" id="c1"/>
-					<label for="c1">Dogs</label>
-				</div>
-				<div>
-					<input type="checkbox" name="checkboxes" value="check_2" id="c2"/>
-					<label for="c2">Cats</label>
-				</div>
-				<div>
-					<input type="checkbox" name="checkboxes" value="check_3" id="c3"/>
-					<label for="c3">Rats</label>
-				</div>
-				<div>
-					<input type="checkbox" name="checkboxes" value="check_3" id="c4"/>
-					<label for="c4">Birds</label>
-				</div>
-			</div>
-
-			<label for="file">File Input:</label>
-			<input type="file" class="file" name="file" />
-
-			<input type="color">
-			<input type="date">
-			<input type="datetime-local">
-			<input type="email" placeholder="email@mail.com">
-			<input type="number" placeholder="number">
-			<input type="range" min="0" max="10" list="range-values" value="3">
-			<datalist id="range-values">
-				<option value="0" label="0"></option>
-				<option value="1" label="1"></option>
-				<option value="2" label="2"></option>
-				<option value="3" label="3"></option>
-				<option value="4" label="4"></option>
-				<option value="5" label="5"></option>
-				<option value="6" label="6"></option>
-				<option value="7" label="7"></option>
-				<option value="8" label="8"></option>
-				<option value="9" label="9"></option>
-				<option value="10" label="10"></option>
-			</datalist>
-
-			<nav>
-				<input class="button" type="reset" value="Reset" />
-				<input class="button" type="submit" value="Submit" />
-			</nav>
-
-		</form>
-
-	</fieldset>
-	<small><a href="#top">[top]</a></small>
-</section>
-
-<hr />
-
-<section>
-	<h1 id="tables">Tables</h1>
-
-	<table cellspacing="0" cellpadding="0">
-		<tr>
-			<th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
-		</tr>
-		<tr>
-			<td>Division 1</td><td>Division 2</td><td>Division 3</td>
-		</tr>
-		<tr class="even">
-			<td>Division 1</td><td>Division 2</td><td>Division 3</td>
-		</tr>
-		<tr>
-			<td>Division 1</td><td>Division 2</td><td>Division 3</td>
-		</tr>
-
-	</table>
-
-	<small><a href="#top">[top]</a></small>
-</section>
-
-<hr />
-
-<section>
-	<h1 id="misc">Typography</h1>
-
-	<p>Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. <cite>cite from Sir William Shakespeare</cite>. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. <acronym title="National Basketball Association">NBA</acronym> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  <abbr title="Avenue">AVE</abbr></p>
-
-	<h3>Preformated text</h3>
-	<pre><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus.nonummy. <acronym title="National Basketball Association">NBA</acronym> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  <abbr title="Avenue">AVE</abbr></p></pre>
-
-	<pre>
-		<code>
-			class Person{
-				constructor(name,surname){
-					this.name = name;
-					this.surname = surname;
-				}
-
-				sayHi(){
-					console.log("Hiiii");
-				}
-			}</code>
-			<kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>supr</kbd>
-	</pre>
-
-	<h3>Blockquotes</h3>
-	<blockquote>
-		"This stylesheet is going to help so freaking much." <br />-Blockquote
-	</blockquote>
-
-	<h3>Details</h3>
-	<details>
-		<summary>Some summary/details can't hurt!</summary>
-		<p>Lorem ipsum dolor sit blah blah.</p>
-	</details>
-
-	<small><a href="#top">[top]</a></small>
-</section>
-
-<!-- End of Sample Content -->
-
+		<section>
+			<h3>Contribute</h3>
+			<p>Any suggestion,help or criticism will be accepted.</p>
+			<p>Simply make a pull request to my <a href="https://github.com/wet333/CSSC" target="_blank" rel="noopener noreferrer">Github</a>.</p>
+		</section>
+	</main>
+	<footer>
+		<p>&copy2020 - Created by Agustin Wet </p>
+	</footer>
 </body>
 </html>

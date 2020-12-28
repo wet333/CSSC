@@ -1,28 +1,30 @@
 table{
-    background-color: adjust-color($main-color, $lightness: +5%, $alpha: 1.0);
+    background-color: $main-color-dark-5;
     margin: {
         top: 2rem;
         bottom: 2rem;
     };
-    box-shadow: adjust-color($main-color, $lightness: -5%, $alpha: -0.8) 0 0 0.4rem 0.2rem;
+    border: 0.2rem solid $main-color-dark-10;
+    @include apply-box-shadow();
 }
 
 tr:nth-child(2n+1){
-    background-color: adjust-color($main-color, $lightness: +8%, $alpha: 1.0);
+    background-color: $main-color-light-5;
 }
 tr:first-child{
-    background-color: adjust-color($accent-color, $lightness: -10%, $alpha: 1.0);
+    background-color: $main-color-light-10;
 }
 td,th{
     padding: 0.5rem;
-    border: 0.1rem solid adjust-color($accent-color, $lightness: -10%, $alpha: 1.0);
+    border: 0.1rem solid $main-color-dark-10;
     text-align: left;
 
     &:hover{
-        background-color: adjust-color($accent-color, $lightness: -10%, $alpha: -0.8);
+        background-color: $accent-color;
+        @include contrast-font($accent-color);
     }
 }
 th{
-    color: $main-color;
+    @include contrast-font($main-color-dark-10);
     font-weight: 700;
 }

@@ -1,0 +1,57 @@
+mark{
+    background-color: $inverse-color;
+    @include contrast-font($inverse-color);
+}
+em{
+    border-radius: 0.5rem;
+    color: $accent-color;
+}
+pre{
+    margin: 2rem 0;
+    background-color: $main-color-light-5;
+    @include apply-box-shadow();
+    overflow-x: auto;
+    width: 100%;
+}
+acronym{
+    text-decoration: underline;
+    color: $accent-color;
+}
+abbr{
+    text-decoration: underline;
+    color: $accent-color;
+}
+blockquote{
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: $main-color-light-5;
+    border-left: 0.5rem solid $accent-color;
+    @include apply-box-shadow();
+}
+kbd{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    background-color: rgb(224, 223, 208);
+    @include contrast-font(rgb(224, 223, 208));
+    font-weight: 800;
+    border-radius: 0.5rem;
+    @include apply-box-shadow();
+}
+details{
+    margin: 2rem 0;
+    background-color: $main-color-light-5;
+    @include apply-box-shadow();
+    cursor: pointer;
+
+    & :focus{
+        outline: 2px solid $accent-color;
+    }
+    & :not(summary){
+        background-color: $main-color-dark-5;
+        padding: 1rem;
+    }
+}
+summary{
+    padding: 1rem;
+}

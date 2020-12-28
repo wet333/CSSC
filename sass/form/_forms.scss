@@ -4,6 +4,35 @@
 form{
     display: flex;
     flex-direction: column;
+    background-color: rgba($main-color-dark-5, $alpha: 0.5);
+    @include contrast-font( rgba($main-color-dark-5, $alpha: 0.5) );
+    @include apply-box-shadow();
+    border: {
+        style: solid;
+        width: 0.2rem;
+        color: $main-color-dark-10;
+    };
+    margin: 1rem;
+    padding: {
+        left: 2rem;
+        right: 2rem;
+        top: 1rem;
+        bottom: 1.5rem;
+    };
+
+    & > nav{
+        box-shadow: none;
+        background-color: transparent;
+        place-content: flex-start;
+    }
+
+    @media screen and (max-width: 500px){
+        border: none;
+        box-shadow: none;
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
 }
 
 label{

@@ -3,13 +3,13 @@ a{
     text-decoration: underline;
 
     &:hover{
-        color: adjust-color($accent-color, $lightness: 15%);
+        color: $accent-color-light
     }
     &:visited{
-        color: invert($accent-color);
+        color: $inverse-color;
         &:hover{
-            color: adjust-color(invert($accent-color), $lightness: 15%);
-            border-bottom: 1px solid adjust-color(invert($accent-color), $lightness: 15%) ;
+            color: $inverse-color-light;
+            border-bottom: 1px solid $inverse-color-light;
         }
     }
 }

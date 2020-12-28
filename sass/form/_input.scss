@@ -1,7 +1,7 @@
 @mixin input-colors {
-    color: $font-color;
-    background-color: $main-color;
-    box-shadow: $shadow-main-color 0px 0px 1rem -0.8rem inset;
+    background-color: $main-color-dark-10;
+    @include contrast-font($main-color-dark-10);
+    @include apply-inner-shadow();
     border: none;
 }
 
@@ -90,9 +90,9 @@ button{
     cursor: pointer;
     padding: 0.5rem 1rem;
     margin: 1rem;
-    box-shadow: adjust-color($shadow-main-color, $lightness: 0%, $alpha: -0.9) 0px 0px 1rem;
-    background-color: adjust-color($accent-color, $lightness: +10%, $alpha: 1.0);
-    color: $main-color;
+    background-color: $accent-color;
+    @include contrast-font($accent-color-light);
+    @include apply-box-shadow();
     font-weight: 700;
     border: none;
     text-align: center;
@@ -100,22 +100,25 @@ button{
     appearance: none;
 
     &:hover{
-        background-color: adjust-color($accent-color, $lightness: -20%, $alpha: 1.0);
-        color: $font-color;
-        box-shadow: adjust-color($shadow-main-color, $lightness: 0%, $alpha: -0.5) 0px 0px 1rem;
+        background-color: $accent-color-dark;
+        @include contrast-font($accent-color-light);
+    }
+
+    &:active{
+        background-color: $accent-color-light;
+        @include contrast-font($accent-color-dark);
     }
 }
 
 input[type="range"]{
     @include unlabeled-input-space();
-    background-color: aqua;
 }
 
 input[type="color"]{
     height: 2rem;
     width: 4rem;
     padding: 0.2rem;
-    background-color: $main-color;
+    background-color: $main-color-dark-10;
     @include unlabeled-input-space();
 }
 

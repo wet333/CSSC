@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
-@import "./typo";
+@import "./text_blocks";
 @import "./links";
+@import "./texts";
 
 /*FONT VARIABLES*/
 :root{
@@ -21,38 +22,4 @@ html{
 }
 *{
     font-family: 'Open Sans', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    line-height: 4rem;
-    margin: {
-        bottom: 0.5rem;
-    }
-    overflow-wrap: break-word;
-}
-
-h1{
-    font-size: calc(var(--font-size) * 3.2);
-}
-h2{
-    font-size: calc(var(--font-size) * 2.4);
-}
-h3{
-    font-size: calc(var(--font-size) * 2);
-}
-h4{
-    font-size: calc(var(--font-size) * 1.6);
-}
-h5{
-    font-size: calc(var(--font-size) * 1.4);
-}
-h6{
-    font-size: calc(var(--font-size) * 1.2);
-}
-
-p{
-    padding: 1rem;
-    line-height: 2rem;
-    font-weight: 400;
 }

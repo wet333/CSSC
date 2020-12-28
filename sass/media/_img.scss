@@ -3,4 +3,9 @@ img{
     width: 100%;
     max-width: fit-content;
     image-rendering: -webkit-optimize-contrast;
+    margin: {
+        top: 1rem;
+        bottom: 1rem;
+    };
+    @include apply-box-shadow();
 }

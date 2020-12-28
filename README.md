@@ -1,9 +1,16 @@
 # CSSC
 
-Add this in a link tag to your HTML and start using CSSC.
+### Homepage
+[CSSC Home](https://keen-morse-9bc5ed.netlify.app/ "Home Page")
 
-Current Version : `<link rel="stylesheet" href="https://unpkg.com/wet-cssc/css/main.css">`
+### CDN
+To start using CSSC in your proyect only add : 
+`<link rel="stylesheet" href="https://unpkg.com/wet-cssc/css/main.css">`
+in your `<head>` tag , that downloads the lastest version from the CDN.
 
-...or you can download the *main.css* on css/ folder and include it in your project.
+### Modifications
+Also you can download the entire project from <a href="https://github.com/wet333/CSSC" target="_blank" rel="noopener noreferrer">Github</a> 
+or typing `git clone https://github.com/wet333/CSSC.git main` on your console.
+Then run `npm start` and the changes on sass/scss files will update the main.css file.
 
-[Live Demo](https://keen-morse-9bc5ed.netlify.app/ "Demo Site")
+[Live Demo](https://keen-morse-9bc5ed.netlify.app/preview.html "Demo Site")

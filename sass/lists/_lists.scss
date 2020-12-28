@@ -7,11 +7,15 @@ ul,ol{
     list-style-position: inside;
     margin: {
         left: 1rem;
+        bottom: 2rem;
     };
+}
 
-    &:first-child{
-        margin-top: 0;
-    }
+/*Nested list without bottom margins*/
+ul > *,ul > * > *,ol > *,ol > * > *{
+    margin: {
+        bottom: 0;
+    };
 }
 
 /*Nesting levels*/

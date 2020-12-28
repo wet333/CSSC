@@ -1,0 +1,3 @@
+@function invert-color($color) {
+    @return adjust-color($color, $hue: 180deg);
+}
